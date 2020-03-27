@@ -12,12 +12,12 @@
   background-size: cover;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .card-wrapper {
-  width: 450px;
-  height: 600px;
-  border: 1px solid #ffffff;
+  width: 400px;
+  height: 90vh;
   transition: box-shadow 0.5s;
 
   &:hover {
@@ -26,5 +26,27 @@
 }
 
 .card {
-  display: none;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    190deg,
+    rgba(27, 63, 29, 0.712),
+    rgba(40, 40, 41, 0.87)
+  );
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.5);
 }
