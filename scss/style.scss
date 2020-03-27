@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgb(0, 0, 0)),
+    url(/images/background.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.card-wrapper {
+  width: 450px;
+  height: 600px;
+  border: 1px solid #ffffff;
+  transition: box-shadow 0.5s;
+
+  &:hover {
+    box-shadow: 0 0 30px #ffffff;
+  }
+}
+
+.card {
+  display: none;
+}

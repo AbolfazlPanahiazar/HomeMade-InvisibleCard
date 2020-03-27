@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(black)), url(/images/background.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.05), black), url(/images/background.jpg) no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-wrapper {
+  width: 450px;
+  height: 600px;
+  border: 1px solid #ffffff;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.card-wrapper:hover {
+  -webkit-box-shadow: 0 0 30px #ffffff;
+          box-shadow: 0 0 30px #ffffff;
+}
+
+.card {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
